@@ -1,7 +1,11 @@
-var React = require('react');
+import React from 'react'
 
-export class MyComponent extends React.Component {
-  render() {
-    return <div>Hello World</div>;
-  }
+import CommentList from './comment-list'
+
+
+
+export default class Main extends React.Component {
+    render() {
+        return <CommentList data={this.props.data} />;
+    }
 }
